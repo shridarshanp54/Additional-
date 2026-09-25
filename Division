@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void main()
+{
+int sensor1, sensor2, division;
+
+printf("Enter reading from sensor1:");
+scanf ("%d", &sensor1);
+
+printf("Enter reading from sensor2:");
+scanf("%d", &sensor2);
+
+division = sensor1 / sensor2;
+
+printf("division of sensor reading=%d", division);
+}
