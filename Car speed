@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main()
+{
+    int carspeed, low = 30, high = 60;
+
+    clrscr();
+
+    printf("enter car speed=");
+    scanf("%d", &carspeed);
+
+    if (carspeed <= low)
+    {
+        printf("car speed is normal");
+    }
+    else if (carspeed >= low && carspeed <= high)
+    {
+        printf("car speed is medium");
+    }
+    else
+    {
+        printf("car speed is very high");
+    }
+
+    getch();
+}
