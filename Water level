@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main()
+{
+    int waterlevel, low = 30, high = 70;
+
+    clrscr();
+
+    printf("enter water level=");
+    scanf("%d", &waterlevel);
+
+    if (waterlevel <= low)
+    {
+        printf("water level is low");
+    }
+    else if (waterlevel >= low && waterlevel <= high)
+    {
+        printf("water level is normal");
+    }
+    else
+    {
+        printf("water level is high");
+    }
+
+    getch();
+}
