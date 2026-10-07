@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main()
+{
+    int motorspeed, low = 1000, high = 2000;
+
+    clrscr();
+
+    printf("enter motor speed=");
+    scanf("%d", &motorspeed);
+
+    if (motorspeed <= low)
+    {
+        printf("motor speed is low");
+    }
+    else if (motorspeed >= low && motorspeed <= high)
+    {
+        printf("motor speed is normal");
+    }
+    else
+    {
+        printf("motor speed is high");
+    }
+
+    getch();
+}
